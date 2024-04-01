@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+  <class name="com.nt.entity.Shop">
+   <!--o-r mapping-->
+   <id name="ShopId" column="SHOPID">
+    <!-- <generator class="assigned"/>--> 
+     <generator class="increment"/> 
+     </id>  
+   <property name="shopName" column="SHOPNAME"/>
+   <property name="price" column="PRICE"/>
+   <property name="qty" column="QTY"/>
+  </class>
+</hibernate-mapping>

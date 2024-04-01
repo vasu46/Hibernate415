@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+ <hibernate-mapping>
+   <class name="com.nt.entity.CallerTune" table="CALLERTUNE">
+    <id name="tuneId" column="TUNEID">
+     <generator class="increment"/>
+    </id>
+    <version name="updationCount" column="UPDATIONCOUNT"></version>
+    <property name="tuneName" column="TUNENAME"></property>
+    <property name="movieName" column="MOVIENAME"></property>
+   
+   
+   </class>
+ </hibernate-mapping>
